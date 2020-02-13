@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func declencherAlerte(_ sender: UIButton) {
+        //Style 1
         afficherAlertStyle1()
     }
     
