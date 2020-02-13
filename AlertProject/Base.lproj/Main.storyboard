@@ -15,11 +15,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHh-Zi-Ktk">
-                                <rect key="frame" x="89.5" y="424.5" width="235" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEV-VC-73Z">
+                                <rect key="frame" x="126" y="524" width="162" height="47"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                <state key="normal" title="Déclencher alerte"/>
+                                <state key="normal" title="Style Alert 2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3u-5v-98I">
+                                <rect key="frame" x="126" y="524" width="162" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="Style Alert 2"/>
+                                <connections>
+                                    <action selector="declencherAlert2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cbw-EX-hba"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHh-Zi-Ktk">
+                                <rect key="frame" x="126" y="332" width="162" height="47"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="Style Alert 1"/>
                                 <connections>
                                     <action selector="declencherAlerte:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dpz-mo-vt7"/>
                                 </connections>
@@ -27,8 +43,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="WHh-Zi-Ktk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HEF-up-ibt"/>
-                            <constraint firstItem="WHh-Zi-Ktk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WXB-Ad-pkx"/>
+                            <constraint firstItem="UEV-VC-73Z" firstAttribute="top" secondItem="WHh-Zi-Ktk" secondAttribute="bottom" constant="145" id="3Oh-bD-jy8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WHh-Zi-Ktk" secondAttribute="trailing" constant="126" id="6Q3-ac-dw3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UEV-VC-73Z" secondAttribute="trailing" constant="126" id="7rY-cI-JHs"/>
+                            <constraint firstItem="WHh-Zi-Ktk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="Haz-LP-pEc"/>
+                            <constraint firstItem="UEV-VC-73Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="JQb-nv-BFU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UEV-VC-73Z" secondAttribute="bottom" constant="291" id="Yjk-wz-Fnj"/>
+                            <constraint firstItem="UEV-VC-73Z" firstAttribute="top" secondItem="WHh-Zi-Ktk" secondAttribute="bottom" constant="145" id="d7q-1L-Rei"/>
+                            <constraint firstItem="WHh-Zi-Ktk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="288" id="o5o-uY-lfd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
