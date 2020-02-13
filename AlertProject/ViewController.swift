@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func declencherAlert2(_ sender: UIButton) {
+        // Style 2
         afficherAlertStyle2()
     }
     
