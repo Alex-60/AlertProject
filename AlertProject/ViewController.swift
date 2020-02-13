@@ -12,9 +12,23 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func declencherAlerte(_ sender: UIButton) {
+        afficherAlert()
+    }
+    
+    func afficherAlert(){
+        
+        let myAlert = UIAlertController(title:"Mon Alerte", message: "Affichage de l'alerte", preferredStyle: .actionSheet)
+        let btnAnnuler = UIAlertAction(title: "Annuler", style: .cancel, handler: nil)
+        let btnValider = UIAlertAction(title: "Valider", style: .default, handler: nil)
+        
+        myAlert.addAction(btnAnnuler)
+        myAlert.addAction(btnValider)
+        
+        present(myAlert, animated: true)
+    }
+    
 }
 
